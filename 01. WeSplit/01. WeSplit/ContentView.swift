@@ -14,6 +14,15 @@ struct ContentView: View {
     
     let tipPercentages = [0, 10, 15, 20, 25]
     
+    var totalAmount: Double {
+        let peopleCount = Double(numberOfPeople + 2)
+        let tipSelection = Double(tipPercentage)
+        
+        let tipValue = checkAmount / 100 * tipSelection
+        
+        return checkAmount + tipValue
+    }
+    
     var totalPerPerson: Double {
         let peopleCount = Double(numberOfPeople + 2)
         let tipSelection = Double(tipPercentage)
@@ -56,6 +65,10 @@ struct ContentView: View {
                 }
                 
                 Section {
+                    Text(totalAmount,
+                         format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                    .foregroundStyle(tipPercentage == 0 ? .red
+                                     : .black)
                     Text(totalPerPerson,
                          format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
                 }
