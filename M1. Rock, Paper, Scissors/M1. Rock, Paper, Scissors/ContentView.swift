@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  C1. Rock, Paper, Scissors
+//  M1. Rock, Paper, Scissors
 //
 //  Created by Kabir Dhillon on 4/8/24.
 //
@@ -24,7 +24,7 @@ struct ContentView: View {
             Rectangle()
                 .fill(Gradient(colors: [.purple, .blue]))
                 .ignoresSafeArea()
-
+            
             VStack {
                 Spacer()
                 VStack(spacing: 10) {
@@ -69,7 +69,7 @@ struct ContentView: View {
                 }
                 
                 Spacer()
-                 
+                
                 Button("Reset", role: .destructive) {
                     resetGame()
                 }
@@ -83,11 +83,6 @@ struct ContentView: View {
     }
     
     func checkMove() {
-//        if shouldWin {
-//            playerScore += appMove != playerMove ? 1 : -1
-//        } else {
-//            playerScore += appMove == playerMove ? -1 : 1
-//        }
         if appMove == playerMove {
             //
         } else if shouldWin && winning[appMove] == moves[playerMove] {
@@ -101,7 +96,6 @@ struct ContentView: View {
         playerScore += 1
         appMove = Int.random(in: 0...2)
         shouldWin = Bool.random()
-
     }
     
     func resetGame() {

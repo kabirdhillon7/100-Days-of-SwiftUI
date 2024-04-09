@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		483C659F2BC4BC1B003F8EE7 /* C1__Rock__Paper__ScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C659E2BC4BC1B003F8EE7 /* C1__Rock__Paper__ScissorsApp.swift */; };
-		483C65A12BC4BC1B003F8EE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C65A02BC4BC1B003F8EE7 /* ContentView.swift */; };
-		483C65A32BC4BC1D003F8EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483C65A22BC4BC1D003F8EE7 /* Assets.xcassets */; };
-		483C65A62BC4BC1D003F8EE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483C65A52BC4BC1D003F8EE7 /* Preview Assets.xcassets */; };
+		4849F6682BC4DA810033364E /* M1__Rock__Paper__ScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4849F6672BC4DA810033364E /* M1__Rock__Paper__ScissorsApp.swift */; };
+		4849F66A2BC4DA810033364E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4849F6692BC4DA810033364E /* ContentView.swift */; };
+		4849F66C2BC4DA820033364E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4849F66B2BC4DA820033364E /* Assets.xcassets */; };
+		4849F66F2BC4DA820033364E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4849F66E2BC4DA820033364E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		483C659B2BC4BC1B003F8EE7 /* C1. Rock, Paper, Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C1. Rock, Paper, Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		483C659E2BC4BC1B003F8EE7 /* C1__Rock__Paper__ScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C1__Rock__Paper__ScissorsApp.swift; sourceTree = "<group>"; };
-		483C65A02BC4BC1B003F8EE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		483C65A22BC4BC1D003F8EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		483C65A52BC4BC1D003F8EE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4849F6642BC4DA810033364E /* M1. Rock, Paper, Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M1. Rock, Paper, Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4849F6672BC4DA810033364E /* M1__Rock__Paper__ScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M1__Rock__Paper__ScissorsApp.swift; sourceTree = "<group>"; };
+		4849F6692BC4DA810033364E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4849F66B2BC4DA820033364E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4849F66E2BC4DA820033364E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		483C65982BC4BC1B003F8EE7 /* Frameworks */ = {
+		4849F6612BC4DA810033364E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		483C65922BC4BC1B003F8EE7 = {
+		4849F65B2BC4DA810033364E = {
 			isa = PBXGroup;
 			children = (
-				483C659D2BC4BC1B003F8EE7 /* C1. Rock, Paper, Scissors */,
-				483C659C2BC4BC1B003F8EE7 /* Products */,
+				4849F6662BC4DA810033364E /* M1. Rock, Paper, Scissors */,
+				4849F6652BC4DA810033364E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		483C659C2BC4BC1B003F8EE7 /* Products */ = {
+		4849F6652BC4DA810033364E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				483C659B2BC4BC1B003F8EE7 /* C1. Rock, Paper, Scissors.app */,
+				4849F6642BC4DA810033364E /* M1. Rock, Paper, Scissors.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		483C659D2BC4BC1B003F8EE7 /* C1. Rock, Paper, Scissors */ = {
+		4849F6662BC4DA810033364E /* M1. Rock, Paper, Scissors */ = {
 			isa = PBXGroup;
 			children = (
-				483C659E2BC4BC1B003F8EE7 /* C1__Rock__Paper__ScissorsApp.swift */,
-				483C65A02BC4BC1B003F8EE7 /* ContentView.swift */,
-				483C65A22BC4BC1D003F8EE7 /* Assets.xcassets */,
-				483C65A42BC4BC1D003F8EE7 /* Preview Content */,
+				4849F6672BC4DA810033364E /* M1__Rock__Paper__ScissorsApp.swift */,
+				4849F6692BC4DA810033364E /* ContentView.swift */,
+				4849F66B2BC4DA820033364E /* Assets.xcassets */,
+				4849F66D2BC4DA820033364E /* Preview Content */,
 			);
-			path = "C1. Rock, Paper, Scissors";
+			path = "M1. Rock, Paper, Scissors";
 			sourceTree = "<group>";
 		};
-		483C65A42BC4BC1D003F8EE7 /* Preview Content */ = {
+		4849F66D2BC4DA820033364E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				483C65A52BC4BC1D003F8EE7 /* Preview Assets.xcassets */,
+				4849F66E2BC4DA820033364E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		483C659A2BC4BC1B003F8EE7 /* C1. Rock, Paper, Scissors */ = {
+		4849F6632BC4DA810033364E /* M1. Rock, Paper, Scissors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 483C65A92BC4BC1D003F8EE7 /* Build configuration list for PBXNativeTarget "C1. Rock, Paper, Scissors" */;
+			buildConfigurationList = 4849F6722BC4DA820033364E /* Build configuration list for PBXNativeTarget "M1. Rock, Paper, Scissors" */;
 			buildPhases = (
-				483C65972BC4BC1B003F8EE7 /* Sources */,
-				483C65982BC4BC1B003F8EE7 /* Frameworks */,
-				483C65992BC4BC1B003F8EE7 /* Resources */,
+				4849F6602BC4DA810033364E /* Sources */,
+				4849F6612BC4DA810033364E /* Frameworks */,
+				4849F6622BC4DA810033364E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "C1. Rock, Paper, Scissors";
-			productName = "C1. Rock, Paper, Scissors";
-			productReference = 483C659B2BC4BC1B003F8EE7 /* C1. Rock, Paper, Scissors.app */;
+			name = "M1. Rock, Paper, Scissors";
+			productName = "M1. Rock, Paper, Scissors";
+			productReference = 4849F6642BC4DA810033364E /* M1. Rock, Paper, Scissors.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		483C65932BC4BC1B003F8EE7 /* Project object */ = {
+		4849F65C2BC4DA810033364E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					483C659A2BC4BC1B003F8EE7 = {
+					4849F6632BC4DA810033364E = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = 483C65962BC4BC1B003F8EE7 /* Build configuration list for PBXProject "C1. Rock, Paper, Scissors" */;
+			buildConfigurationList = 4849F65F2BC4DA810033364E /* Build configuration list for PBXProject "M1. Rock, Paper, Scissors" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 483C65922BC4BC1B003F8EE7;
-			productRefGroup = 483C659C2BC4BC1B003F8EE7 /* Products */;
+			mainGroup = 4849F65B2BC4DA810033364E;
+			productRefGroup = 4849F6652BC4DA810033364E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				483C659A2BC4BC1B003F8EE7 /* C1. Rock, Paper, Scissors */,
+				4849F6632BC4DA810033364E /* M1. Rock, Paper, Scissors */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		483C65992BC4BC1B003F8EE7 /* Resources */ = {
+		4849F6622BC4DA810033364E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				483C65A62BC4BC1D003F8EE7 /* Preview Assets.xcassets in Resources */,
-				483C65A32BC4BC1D003F8EE7 /* Assets.xcassets in Resources */,
+				4849F66F2BC4DA820033364E /* Preview Assets.xcassets in Resources */,
+				4849F66C2BC4DA820033364E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		483C65972BC4BC1B003F8EE7 /* Sources */ = {
+		4849F6602BC4DA810033364E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				483C65A12BC4BC1B003F8EE7 /* ContentView.swift in Sources */,
-				483C659F2BC4BC1B003F8EE7 /* C1__Rock__Paper__ScissorsApp.swift in Sources */,
+				4849F66A2BC4DA810033364E /* ContentView.swift in Sources */,
+				4849F6682BC4DA810033364E /* M1__Rock__Paper__ScissorsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		483C65A72BC4BC1D003F8EE7 /* Debug */ = {
+		4849F6702BC4DA820033364E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		483C65A82BC4BC1D003F8EE7 /* Release */ = {
+		4849F6712BC4DA820033364E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,14 +264,14 @@
 			};
 			name = Release;
 		};
-		483C65AA2BC4BC1D003F8EE7 /* Debug */ = {
+		4849F6732BC4DA820033364E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"C1. Rock, Paper, Scissors/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"M1. Rock, Paper, Scissors/Preview Content\"";
 				DEVELOPMENT_TEAM = SBCRL8SBBK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -285,7 +285,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kabir.C1--Rock--Paper--Scissors";
+				PRODUCT_BUNDLE_IDENTIFIER = "kabir.M1--Rock--Paper--Scissors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -293,14 +293,14 @@
 			};
 			name = Debug;
 		};
-		483C65AB2BC4BC1D003F8EE7 /* Release */ = {
+		4849F6742BC4DA820033364E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"C1. Rock, Paper, Scissors/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"M1. Rock, Paper, Scissors/Preview Content\"";
 				DEVELOPMENT_TEAM = SBCRL8SBBK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kabir.C1--Rock--Paper--Scissors";
+				PRODUCT_BUNDLE_IDENTIFIER = "kabir.M1--Rock--Paper--Scissors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -325,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		483C65962BC4BC1B003F8EE7 /* Build configuration list for PBXProject "C1. Rock, Paper, Scissors" */ = {
+		4849F65F2BC4DA810033364E /* Build configuration list for PBXProject "M1. Rock, Paper, Scissors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				483C65A72BC4BC1D003F8EE7 /* Debug */,
-				483C65A82BC4BC1D003F8EE7 /* Release */,
+				4849F6702BC4DA820033364E /* Debug */,
+				4849F6712BC4DA820033364E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		483C65A92BC4BC1D003F8EE7 /* Build configuration list for PBXNativeTarget "C1. Rock, Paper, Scissors" */ = {
+		4849F6722BC4DA820033364E /* Build configuration list for PBXNativeTarget "M1. Rock, Paper, Scissors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				483C65AA2BC4BC1D003F8EE7 /* Debug */,
-				483C65AB2BC4BC1D003F8EE7 /* Release */,
+				4849F6732BC4DA820033364E /* Debug */,
+				4849F6742BC4DA820033364E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 483C65932BC4BC1B003F8EE7 /* Project object */;
+	rootObject = 4849F65C2BC4DA810033364E /* Project object */;
 }
