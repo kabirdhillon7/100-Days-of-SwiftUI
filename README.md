@@ -3,6 +3,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 
 ## Requirements
 - iOS 17 or later
+- iPhone XR or iPhone SE (2nd Generation) or newer
 
 # Preview
 | Project / Topics | Screenshot |
