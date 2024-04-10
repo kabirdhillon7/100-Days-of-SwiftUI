@@ -8,6 +8,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Project / Topics | Screenshot |
 | -- | -- |
 | Project 1: WeSplit<br><sub><sup>Form, Section, NavigationView, @State property wrapper, TextField, Picker, ForEach</sub></sup> | _ |
+| Challenge 1: Converter<br><sub><sup>VStack, Image, Alert</sub></sup> | _ |
 | Project 2: Guess the Flag<br><sub><sup>VStack, Image, Alert</sub></sup> | _ |
 | Project 3: View and Modifiers<br><sub><sup>Views, modifiers, composition, containers</sub></sup> | _ |
 | Milestone 1: Rock Paper Scissors | _ |
