@@ -8,25 +8,54 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var animationAmount = 1.0
+    
     @State private var isShowingRed = false
     
     var body: some View {
-        ZStack {
-            Rectangle()
-                .fill(.blue)
-                .frame(width: 200, height: 200)
-            
-            if isShowingRed {
-                Rectangle()
-                    .fill(.red)
-                    .frame(width: 200, height: 200)
-                    .transition(.pivot)
+        NavigationStack {
+            List {
+                Button("Tap Me") {
+                    //                animationAmount += 1
+                }
+                .padding(50)
+                .background(.red)
+                .foregroundStyle(.white)
+                .clipShape(.circle)
+                .overlay(
+                    Circle()
+                        .stroke(.red)
+                        .scaleEffect(animationAmount)
+                        .opacity(2 - animationAmount)
+                        .animation(
+                            .easeInOut(duration: 1)
+                            .repeatForever(autoreverses: false),
+                            value: animationAmount
+                        )
+                )
+                .onAppear {
+                    animationAmount = 2
+                }
+                
+                ZStack {
+                    Rectangle()
+                        .fill(.blue)
+                        .frame(width: 200, height: 200)
+                    
+                    if isShowingRed {
+                        Rectangle()
+                            .fill(.red)
+                            .frame(width: 200, height: 200)
+                            .transition(.pivot)
+                    }
+                }
+                .onTapGesture {
+                    withAnimation {
+                        isShowingRed.toggle()
+                    }
+                }
             }
-        }
-        .onTapGesture {
-            withAnimation {
-                isShowingRed.toggle()
-            }
+            .navigationTitle("Animations")
         }
     }
 }
