@@ -21,6 +21,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Project 4: BetterRest<br><sub><sup>Machine Learning (Core ML), Dates (DatePicker, DateComponents, DateFormatter) Stepper</sub></sup> | _ |
 | Project 5: Word Scramble<br><sub><sup>List, Bundle, fatalError(), UITextChecker</sub></sup> | _ |
 | Project 6: Animations<br><sub><sup>Animations, transitions</sub></sup> | _ |
+| Milestone 2: Multiplication Tables | _ |
 
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
