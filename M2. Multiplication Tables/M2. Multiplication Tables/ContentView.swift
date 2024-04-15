@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-final class NavigationCoordinator: ObservableObject {
-    @Published var shouldNavigate = false
-}
-
 struct ContentView: View {
     @State private var beginRange = 2
     @State private var endRange = 12
@@ -19,7 +15,6 @@ struct ContentView: View {
     
     @State private var animation = 1.0
     @State private var shouldNavigate = false
-//    @State private var path: [Int] = []
     
     var body: some View {
         NavigationStack {

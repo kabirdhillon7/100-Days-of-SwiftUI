@@ -10,6 +10,7 @@ import SwiftUI
 struct FinishScreenView: View {
     @Environment(\.dismiss) var dismiss
     @Binding var shouldNavigate: Bool
+    
     @State private var animation = 1.0
     @State private var scale = 1.0
     

@@ -35,7 +35,6 @@ final class QuestionViewModel: ObservableObject {
 }
 
 struct QuestionView: View {
-    @EnvironmentObject var navigation: NavigationCoordinator
     @ObservedObject private var viewModel: QuestionViewModel
     @Binding private var shouldNavigate: Bool
     @FocusState private var keyboardFocused: Bool
@@ -44,7 +43,6 @@ struct QuestionView: View {
     @State private var incorrectAnswerAlert = false
     @State private var buttonDisabled = true
     @State var shouldNavigateToFinishScreen = false
-    
     
     init(viewModel: QuestionViewModel, shouldNavigate: Binding<Bool>) {
         _viewModel = ObservedObject(wrappedValue: viewModel)
