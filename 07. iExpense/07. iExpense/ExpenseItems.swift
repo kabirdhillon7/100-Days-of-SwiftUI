@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Observation
 
 struct ExpenseItem: Identifiable, Codable {
     var id = UUID()
