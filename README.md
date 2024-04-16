@@ -22,6 +22,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Project 5: Word Scramble<br><sub><sup>List, Bundle, fatalError(), UITextChecker</sub></sup> | _ |
 | Project 6: Animations<br><sub><sup>Animations, transitions</sub></sup> | _ |
 | Milestone 2: Multiplication Tables | _ |
+| Project 7: iExpense<br><sub><sup>UserDefaults, Codable, sheet(), onDelete(), @Observable</sub></sup> | _ |
 
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
