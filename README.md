@@ -37,5 +37,5 @@ If you have any questions or feedback, you can reach me through the following ch
 [xcode_website]: https://developer.apple.com/xcode/
 [xcode_badge]: https://img.shields.io/badge/Xcode-15-1575F9?style=flat&logo=Xcode
 
-[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/35
-[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-35-3463DA
+[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/38
+[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-38-3463DA
