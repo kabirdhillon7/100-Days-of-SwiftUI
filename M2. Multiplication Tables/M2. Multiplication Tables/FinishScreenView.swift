@@ -46,12 +46,13 @@ struct FinishScreenView: View {
                     }
                 } label: {
                     Text("Exit")
+                        .font(.title.weight(.semibold))
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                         .foregroundStyle(.black)
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.white)
-                .buttonBorderShape(.capsule)
+                .buttonBorderShape(.roundedRectangle(radius: 10))
                 .scaleEffect(animation)
                 .animation(.easeInOut, value: animation)
                 .padding()

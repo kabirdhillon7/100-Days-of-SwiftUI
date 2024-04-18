@@ -18,44 +18,57 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                HStack {
-                    Stepper("\(beginRange.formatted())", value: $beginRange, in: 2...12, step: 1)
-                    Text("up to...")
-                    Stepper("\(endRange.formatted())", value: $endRange, in: 2...12, step: 1)
-                }
-                Picker("How many questions?", selection: $questionSelection) {
-                    ForEach(questionsOptions, id: \.self) {
-                        Text(String($0))
+            ZStack {
+                Rectangle()
+                    .fill(.purple.quaternary)
+                    .ignoresSafeArea()
+
+                VStack {
+                    HStack {
+                        Stepper("\(beginRange.formatted())", value: $beginRange, in: 2...12, step: 1)
+                        Text("up to...")
+                        Stepper("\(endRange.formatted())", value: $endRange, in: 2...12, step: 1)
                     }
-                }
-                .pickerStyle(.segmented)
-                
-                Spacer()
-                
-                Button {
-                    withAnimation {
-                        animation += 0.5
+                    VStack(spacing: 10) {
+                        Text("How many questions?")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .font(.title2.weight(.semibold))
+                        Picker("How many questions?", selection: $questionSelection) {
+                            ForEach(questionsOptions, id: \.self) {
+                                Text(String($0))
+                            }
+                        }
+                        .pickerStyle(.segmented)
                     }
-                    withAnimation(.default.delay(0.5)) {
-                        animation = 1.0
-                    }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        shouldNavigate = true
-                    }
-                } label: {
-                    Text("Start")
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                     
+                    Spacer()
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(.green)
-                .buttonBorderShape(.capsule)
-                .scaleEffect(animation)
-                .animation(.easeInOut, value: animation)
+                .overlay(alignment: .bottom, content: {
+                    Button {
+                        withAnimation {
+                            animation += 0.5
+                        }
+                        withAnimation(.default.delay(0.5)) {
+                            animation = 1.0
+                        }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                            shouldNavigate = true
+                        }
+                    } label: {
+                        Text("Start")
+                            .font(.title.weight(.semibold))
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.blue)
+                    .buttonBorderShape(.roundedRectangle(radius: 10))
+                    .scaleEffect(animation)
+                    .animation(.easeInOut, value: animation)
+                })
+                .padding()
             }
             .navigationTitle("Multiplication")
-            .padding()
             .navigationDestination(isPresented: $shouldNavigate) {
                 QuestionView(viewModel: QuestionViewModel(range: (beginRange, endRange), totalQuestions: questionSelection), shouldNavigate: $shouldNavigate)
             }

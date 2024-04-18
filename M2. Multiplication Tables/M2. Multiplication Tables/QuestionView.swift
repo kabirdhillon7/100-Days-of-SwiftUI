@@ -40,6 +40,7 @@ struct QuestionView: View {
     @FocusState private var keyboardFocused: Bool
     
     @State private var animation = 1.0
+    @State private var quitAnimation = 1.0
     @State private var incorrectAnswerAlert = false
     @State private var buttonDisabled = true
     @State var shouldNavigateToFinishScreen = false
@@ -51,36 +52,42 @@ struct QuestionView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Question \(viewModel.currentQuestion) / \(viewModel.totalQuestions)")
-                    .font(.largeTitle.bold())
-                
-                Spacer()
-                HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
-                    let numVal = viewModel.nums[viewModel.currentQuestion]
-                    
-                    Text("\(numVal.0) x \(numVal.1) =")
-                        .font(.title.weight(.medium))
+            ZStack {
+                Rectangle()
+                    .fill(.purple.quaternary)
+                    .ignoresSafeArea()
+                VStack {
+                    Text("Question \(viewModel.currentQuestion) / \(viewModel.totalQuestions)")
+                        .font(.largeTitle.bold())
                         .scaleEffect(animation)
                         .animation(.linear, value: animation)
                     
-                    TextField("", text: $viewModel.input)
-                        .keyboardType(.decimalPad)
-                        .focused($keyboardFocused)
-                        .onSubmit {
-                            let result = viewModel.checkSum()
-                            if result {
-                                buttonDisabled = false
-                                keyboardFocused = false
-                            } else {
-                                incorrectAnswerAlert = true
+                    Spacer()
+                    HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
+                        let numVal = viewModel.nums[viewModel.currentQuestion]
+                        
+                        Text("\(numVal.0) x \(numVal.1) =")
+                            .font(.largeTitle.weight(.medium))
+                        
+                        TextField("", text: $viewModel.input)
+                            .font(.largeTitle)
+                            .keyboardType(.decimalPad)
+                            .focused($keyboardFocused)
+                            .onSubmit {
+                                let result = viewModel.checkSum()
+                                if result {
+                                    buttonDisabled = false
+                                    keyboardFocused = false
+                                } else {
+                                    incorrectAnswerAlert = true
+                                }
                             }
-                        }
-                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 0.5)
+                            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 0.5)
+                    }
+                    Spacer()
                 }
-                Spacer()
+                .padding()
             }
-            .padding()
             .overlay(alignment: .bottom, content: {
                 Button {
                     withAnimation {
@@ -105,17 +112,19 @@ struct QuestionView: View {
                     }
                 } label: {
                     Text("Continue")
+                        .font(.title.weight(.semibold))
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                     
                 }
                 .disabled(buttonDisabled)
                 .buttonStyle(.borderedProminent)
-                .tint(.green)
-                .buttonBorderShape(.capsule)
+                .tint(.blue)
+                .buttonBorderShape(.roundedRectangle(radius: 10))
                 .scaleEffect(animation)
                 .animation(.easeInOut, value: animation)
                 .padding()
             })
+            .navigationBarBackButtonHidden()
             .navigationDestination(isPresented: $shouldNavigateToFinishScreen) {
                 FinishScreenView(shouldNavigate: $shouldNavigate)
             }
@@ -130,11 +139,23 @@ struct QuestionView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(role: .destructive) {
-                        shouldNavigate = false
+                        withAnimation {
+                            quitAnimation += 0.5
+                        }
+                        withAnimation(.default.delay(0.50)) {
+                            quitAnimation = 1.0
+                        }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                            shouldNavigate = false
+                        }
                     } label: {
-                        Text("Quit")
-                            .foregroundStyle(.red)
+                        Label("", systemImage: "xmark")
+                            .foregroundStyle(.white)
                     }
+                    .buttonBorderShape(.circle)
+                    .buttonStyle(.borderedProminent)
+                    .scaleEffect(quitAnimation)
+                    .animation(.easeInOut, value: quitAnimation)
                 }
             }
         }
