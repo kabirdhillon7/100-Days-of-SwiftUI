@@ -24,6 +24,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Milestone 2: Multiplication Tables | _ |
 | Project 7: iExpense<br><sub><sup>UserDefaults, Codable, sheet(), onDelete(), @Observable, Navigation, Hashable</sub></sup> | _ |
 | Project 8: Moonshot<br><sub><sup>ScrollView, Navigation, Codable, Generics, Hashable</sub></sup> | _ |
+| Milestone 3: Habit Tracker | _ |
 
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
