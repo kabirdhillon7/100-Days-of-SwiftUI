@@ -55,8 +55,6 @@
 		4806728A2BCE4F6C00F145E7 = {
 			isa = PBXGroup;
 			children = (
-				4869D49F2BD0A98B00BDD99C /* ListLayout.swift */,
-				4869D49D2BD0A91000BDD99C /* GridLayout.swift */,
 				480672952BCE4F6C00F145E7 /* 08. Moonshot */,
 				480672942BCE4F6C00F145E7 /* Products */,
 			);
@@ -99,6 +97,8 @@
 				480672982BCE4F6C00F145E7 /* ContentView.swift */,
 				486CCDD82BD0988800591503 /* MissionView.swift */,
 				486CCDDA2BD09A8300591503 /* AstronautView.swift */,
+				4869D49F2BD0A98B00BDD99C /* ListLayout.swift */,
+				4869D49D2BD0A91000BDD99C /* GridLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
