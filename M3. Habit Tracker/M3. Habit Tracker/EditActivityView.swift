@@ -32,8 +32,8 @@ struct EditActivityView: View {
     
     func stepperUpdated(by val: Int) {
         activityItem.count += val
+        
         guard let index = activities.activities.firstIndex(where: { $0.id == activityItem.id }) else { return }
-        print("Updating Activity Item: \(activityItem.id)")
         activities.activities[index].count += val
     }
 }
