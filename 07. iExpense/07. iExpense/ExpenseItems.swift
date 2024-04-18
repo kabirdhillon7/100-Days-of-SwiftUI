@@ -8,15 +8,16 @@
 import Foundation
 import Observation
 
-struct ExpenseItem: Identifiable, Codable {
+struct ExpenseItem: Identifiable, Codable, Hashable {
     var id = UUID()
-    let name: String
+    var name: String
     let type: String
     let amount: Double
 }
 
 @Observable
 final class Expenses {
+    
     var items = [ExpenseItem]() {
         didSet {
             if let encoded = try? JSONEncoder().encode(items) {

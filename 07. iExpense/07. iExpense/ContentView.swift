@@ -17,17 +17,9 @@ struct ContentView: View {
                 Section {
                     ForEach(expenses.items) { item in
                         if item.type == "Business" {
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text(item.name)
-                                        .font(.headline)
-                                    Text(item.type)
-                                }
-                                
-                                Spacer()
-                                Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
-                                    .foregroundStyle(fontStyling(item.amount))
-                            }
+                            NavigationLink(value: item, label: {
+                                ItemRowView(item: item)
+                            })
                         }
                     }
                     .onDelete(perform: { indexSet in
@@ -39,17 +31,9 @@ struct ContentView: View {
                 Section {
                     ForEach(expenses.items) { item in
                         if item.type == "Personal" {
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text(item.name)
-                                        .font(.headline)
-                                    Text(item.type)
-                                }
-                                
-                                Spacer()
-                                Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
-                                    .foregroundStyle(fontStyling(item.amount))
-                            }
+                            NavigationLink(value: item, label: {
+                                ItemRowView(item: item)
+                            })
                         }
                     }
                     .onDelete(perform: { indexSet in
@@ -65,9 +49,15 @@ struct ContentView: View {
                     showingAddExpense.toggle()
                 }
             }
-            .sheet(isPresented: $showingAddExpense) {
-                AddView(expenses: expenses)
+            .navigationDestination(for: ExpenseItem.self) {
+                ItemDetailView(item: $0)
             }
+            .navigationDestination(isPresented: $showingAddExpense, destination: {
+                AddView(expenses: expenses)
+            })
+//            .sheet(isPresented: $showingAddExpense) {
+//                AddView(expenses: expenses)
+//            }
         }
     }
     
