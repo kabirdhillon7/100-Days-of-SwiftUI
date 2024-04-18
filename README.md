@@ -22,7 +22,8 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Project 5: Word Scramble<br><sub><sup>List, Bundle, fatalError(), UITextChecker</sub></sup> | _ |
 | Project 6: Animations<br><sub><sup>Animations, transitions</sub></sup> | _ |
 | Milestone 2: Multiplication Tables | _ |
-| Project 7: iExpense<br><sub><sup>UserDefaults, Codable, sheet(), onDelete(), @Observable</sub></sup> | _ |
+| Project 7: iExpense<br><sub><sup>UserDefaults, Codable, sheet(), onDelete(), @Observable, Navigation, Hashable</sub></sup> | _ |
+| Project 8: Moonshot<br><sub><sup>ScrollView, Navigation, Codable, Generics, Hashable</sub></sup> | _ |
 
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
@@ -37,5 +38,5 @@ If you have any questions or feedback, you can reach me through the following ch
 [xcode_website]: https://developer.apple.com/xcode/
 [xcode_badge]: https://img.shields.io/badge/Xcode-15-1575F9?style=flat&logo=Xcode
 
-[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/39
-[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-39-3463DA
+[swiftui_current_day]: https://www.hackingwithswift.com/100/swiftui/46
+[swiftui_progress]: https://img.shields.io/badge/100%20Days%20of%20SwiftUI-46-3463DA
