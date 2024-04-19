@@ -26,6 +26,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Project 8: Moonshot<br><sub><sup>ScrollView, Navigation, Codable, Generics, Hashable</sub></sup> | _ |
 | Project 9: Navigation<br><sub><sup>NavigationStack, NavigationLink, navigationDestination()</sub></sup> | _ |
 | Milestone 3: Habit Tracker | _ |
+| Project 10: Cupcakes Corner<br><sub><sup>Codable, Async/Await, URLSession, @Observable, @Bindable</sub></sup> | _ |
 
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
