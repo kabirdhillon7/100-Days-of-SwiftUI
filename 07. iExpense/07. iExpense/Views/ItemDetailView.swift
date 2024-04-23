@@ -24,7 +24,3 @@ struct ItemDetailView: View {
         .toolbarRole(.editor)
     }
 }
-
-//#Preview {
-//    ItemDetailView()
-//}

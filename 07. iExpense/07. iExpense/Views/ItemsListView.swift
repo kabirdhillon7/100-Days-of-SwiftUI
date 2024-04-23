@@ -45,6 +45,23 @@ struct ItemsListView: View {
     }
 }
 
-//#Preview {
-//    ItemsListView()
-//}
+#Preview {
+    do {
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try ModelContainer(for: ExpenseItem.self, configurations: config)
+        
+        let items = [ExpenseItem(name: "Ice Cream", type: "Personal", amount: 8.00)]
+        let sortOrder = [
+            SortDescriptor(\ExpenseItem.name),
+            SortDescriptor(\ExpenseItem.amount)
+        ]
+        
+        return ItemsListView(
+            items: items,
+            sortOrder: sortOrder,
+            expenseType: "All"
+        ).modelContainer(container)
+    } catch {
+        return Text("Failed to create container: \(error.localizedDescription)")
+    }
+}

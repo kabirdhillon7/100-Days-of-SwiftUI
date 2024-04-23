@@ -62,14 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				480672782BCDF2DA00F145E7 /* iExpenseApp.swift */,
-				4806727A2BCDF2DA00F145E7 /* ContentView.swift */,
-				480672862BCE3CDD00F145E7 /* AddView.swift */,
-				4869D4BD2BD0CEF900BDD99C /* ItemRowView.swift */,
-				4869D4BF2BD0D17A00BDD99C /* ItemDetailView.swift */,
-				480672882BCE3CF400F145E7 /* ExpenseItems.swift */,
+				48E47DB52BD881C900676C2D /* Model */,
+				48E47DB62BD881D400676C2D /* Views */,
 				4806727C2BCDF2DB00F145E7 /* Assets.xcassets */,
 				4806727E2BCDF2DB00F145E7 /* Preview Content */,
-				48E47DB32BD8634F00676C2D /* ItemsListView.swift */,
 			);
 			path = "07. iExpense";
 			sourceTree = "<group>";
@@ -80,6 +76,26 @@
 				4806727F2BCDF2DB00F145E7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		48E47DB52BD881C900676C2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				480672882BCE3CF400F145E7 /* ExpenseItems.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48E47DB62BD881D400676C2D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4806727A2BCDF2DA00F145E7 /* ContentView.swift */,
+				480672862BCE3CDD00F145E7 /* AddView.swift */,
+				4869D4BF2BD0D17A00BDD99C /* ItemDetailView.swift */,
+				48E47DB32BD8634F00676C2D /* ItemsListView.swift */,
+				4869D4BD2BD0CEF900BDD99C /* ItemRowView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

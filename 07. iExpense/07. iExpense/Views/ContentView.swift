@@ -11,13 +11,13 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     @Query var items: [ExpenseItem]
+    
     @State private var showingAddExpense = false
     
     @State private var sortOrder = [
         SortDescriptor(\ExpenseItem.name),
         SortDescriptor(\ExpenseItem.amount)
     ]
-    
     @State private var expenseTypes = "All"
     
     var body: some View {
@@ -27,40 +27,6 @@ struct ContentView: View {
                 sortOrder: sortOrder,
                 expenseType: expenseTypes
             )
-//                ForEach(items) { item in
-//                    ItemRowView(item: item)
-//                }
-//                .onDelete(perform: { indexSet in
-//                    removeItems(at: indexSet)
-//                })
-//                Section {
-//                    ForEach(expenses.items) { item in
-//                        if item.type == "Business" {
-//                            NavigationLink(value: item, label: {
-//                                ItemRowView(item: item)
-//                            })
-//                        }
-//                    }
-//                    .onDelete(perform: { indexSet in
-//                        removeItems(at: indexSet)
-//                    })
-//                } header: {
-//                    Text("Business")
-//                }
-//                Section {
-//                    ForEach(expenses.items) { item in
-//                        if item.type == "Personal" {
-//                            NavigationLink(value: item, label: {
-//                                ItemRowView(item: item)
-//                            })
-//                        }
-//                    }
-//                    .onDelete(perform: { indexSet in
-//                        removeItems(at: indexSet)
-//                    })
-//                } header: {
-//                    Text("Personal")
-//                }
             .navigationTitle("iExpense")
             .toolbar {
                 Menu("Menu", systemImage: "ellipsis") {
@@ -92,15 +58,9 @@ struct ContentView: View {
                 }
                 
             }
-//            .navigationDestination(for: ExpenseItem.self) {
-//                ItemDetailView(item: $0)
-//            }
             .navigationDestination(isPresented: $showingAddExpense, destination: {
                 AddView()
             })
-//            .sheet(isPresented: $showingAddExpense) {
-//                AddView(expenses: expenses)
-//            }
         }
     }
     
