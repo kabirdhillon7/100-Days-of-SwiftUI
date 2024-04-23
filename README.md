@@ -22,7 +22,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Project 5: Word Scramble<br><sub><sup>List, Bundle, fatalError(), UITextChecker</sub></sup> | _ |
 | Project 6: Animations<br><sub><sup>Animations, transitions</sub></sup> | _ |
 | Milestone 2: Multiplication Tables | _ |
-| Project 7: iExpense<br><sub><sup>UserDefaults, Codable, sheet(), onDelete(), @Observable, Navigation, Hashable</sub></sup> | _ |
+| Project 7: iExpense<br><sub><sup>UserDefaults, SwiftData, Codable, sheet(), onDelete(), @Observable, Navigation, Hashable</sub></sup> | _ |
 | Project 8: Moonshot<br><sub><sup>ScrollView, Navigation, Codable, Generics, Hashable</sub></sup> | _ |
 | Project 9: Navigation<br><sub><sup>NavigationStack, NavigationLink, navigationDestination()</sub></sup> | _ |
 | Milestone 3: Habit Tracker | _ |
