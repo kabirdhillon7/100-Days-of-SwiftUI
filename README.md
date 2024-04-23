@@ -28,6 +28,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Milestone 3: Habit Tracker | _ |
 | Project 10: Cupcakes Corner<br><sub><sup>Codable, Async/Await, URLSession, @Observable, @Bindable</sub></sup> | _ |
 | Project 11: Bookworm<br><sub><sup>SwiftData, @Binding, custom components</sub></sup> | _ |
+| Project 11: SwiftDataProject<br><sub><sup>SwiftData</sub></sup> | _ |
 
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
