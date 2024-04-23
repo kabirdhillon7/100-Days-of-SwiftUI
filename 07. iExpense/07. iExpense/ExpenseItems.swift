@@ -7,33 +7,30 @@
 
 import Foundation
 import Observation
+import SwiftData
 
-struct ExpenseItem: Identifiable, Codable, Hashable {
+@Model
+final class ExpenseItem {
     var id = UUID()
     var name: String
     let type: String
     let amount: Double
+    
+    init(id: UUID = UUID(), name: String, type: String, amount: Double) {
+        self.id = id
+        self.name = name
+        self.type = type
+        self.amount = amount
+    }
 }
 
-@Observable
+@Model
 final class Expenses {
     
-    var items = [ExpenseItem]() {
-        didSet {
-            if let encoded = try? JSONEncoder().encode(items) {
-                UserDefaults.standard.set(encoded, forKey: "Items")
-            }
-        }
+    @Relationship(deleteRule: .cascade) var items = [ExpenseItem]()
+    
+    init(items: [ExpenseItem] = [ExpenseItem]()) {
+        self.items = items
     }
     
-    init() {
-        if let savedItems = UserDefaults.standard.data(forKey: "Items") {
-            if let decodedItems = try? JSONDecoder().decode([ExpenseItem].self, from: savedItems) {
-                items = decodedItems
-                return
-            }
-        }
-        
-        items = []
-    }
 }
