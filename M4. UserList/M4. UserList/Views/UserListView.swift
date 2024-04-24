@@ -11,17 +11,12 @@ struct UserListView: View {
     let user: User
     
     var body: some View {
-        NavigationLink(value: user) {
-            HStack {
-                Text(user.name)
-                    .foregroundStyle(.primary)
-                Spacer()
-                Image(systemName: user.isActive ? "circle.fill" : "circle")
-                    .foregroundStyle(user.isActive ? .green : .red)
-            }
-        }
-        .navigationDestination(for: User.self) {
-            UserDetailView(user: $0)
+        HStack {
+            Text(user.name)
+                .foregroundStyle(.primary)
+            Spacer()
+            Image(systemName: user.isActive ? "circle.fill" : "circle")
+                .foregroundStyle(user.isActive ? .green : .red)
         }
     }
 }
