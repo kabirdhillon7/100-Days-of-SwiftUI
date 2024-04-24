@@ -11,7 +11,6 @@ import SwiftData
 
 struct ContentView: View {
     @State private var viewModel: ContentViewModel
-    @State private var filterActiveStatus = "All"
     
     init(modelContext: ModelContext) {
         let viewModel = ContentViewModel(modelContext: modelContext)
