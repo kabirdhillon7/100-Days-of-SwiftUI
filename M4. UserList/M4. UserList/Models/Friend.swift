@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftData
 
 struct Friend: Identifiable, Hashable, Codable {
     let id: String

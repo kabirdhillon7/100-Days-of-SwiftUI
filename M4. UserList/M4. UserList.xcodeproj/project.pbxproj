@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48E47DC42BD883E200676C2D /* M4__UserListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E47DC32BD883E200676C2D /* M4__UserListApp.swift */; };
+		48E47DC42BD883E200676C2D /* UserListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E47DC32BD883E200676C2D /* UserListApp.swift */; };
 		48E47DC62BD883E200676C2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E47DC52BD883E200676C2D /* ContentView.swift */; };
 		48E47DC82BD883E400676C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E47DC72BD883E400676C2D /* Assets.xcassets */; };
 		48E47DCB2BD883E400676C2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E47DCA2BD883E400676C2D /* Preview Assets.xcassets */; };
@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		48E47DC02BD883E200676C2D /* M4. UserList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M4. UserList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		48E47DC32BD883E200676C2D /* M4__UserListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M4__UserListApp.swift; sourceTree = "<group>"; };
+		48E47DC32BD883E200676C2D /* UserListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListApp.swift; sourceTree = "<group>"; };
 		48E47DC52BD883E200676C2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		48E47DC72BD883E400676C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48E47DCA2BD883E400676C2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		48E47DC22BD883E200676C2D /* M4. UserList */ = {
 			isa = PBXGroup;
 			children = (
-				48E47DC32BD883E200676C2D /* M4__UserListApp.swift */,
+				48E47DC32BD883E200676C2D /* UserListApp.swift */,
 				48E47DDA2BD889FC00676C2D /* Models */,
 				48E47DD92BD889F800676C2D /* Networking */,
 				48E47DDB2BD88A0500676C2D /* Views */,
@@ -181,7 +181,7 @@
 				48E47DD62BD8858C00676C2D /* Networking.swift in Sources */,
 				48E47DD22BD8840C00676C2D /* User.swift in Sources */,
 				48E47DDD2BD88A2D00676C2D /* UserDetailView.swift in Sources */,
-				48E47DC42BD883E200676C2D /* M4__UserListApp.swift in Sources */,
+				48E47DC42BD883E200676C2D /* UserListApp.swift in Sources */,
 				48E47DD42BD8842400676C2D /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
