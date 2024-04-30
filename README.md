@@ -30,6 +30,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Project 11: Bookworm<br><sub><sup>SwiftData, @Binding, custom components</sub></sup> | _ |
 | Project 11: SwiftDataProject<br><sub><sup>SwiftData</sub></sup> | _ |
 | Milestone 4: UserList | _ |
+| Project 13: Instafilter<br><sub><sup>CoreImage, CoreImage.CIFilterBuiltins, PhotosUI, StoreKit, .confirmationDialog()</sub></sup> | _ |
 
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
