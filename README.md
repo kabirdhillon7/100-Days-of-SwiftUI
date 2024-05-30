@@ -40,7 +40,7 @@ If you have any questions or feedback, you can reach me through the following ch
 - LinkedIn: [Kabir Dhillon](https://www.linkedin.com/in/kabirdhillon/)
 
 
-[swift_release_notes]: [https://www.swift.org/blog/swift-5.7-released/](https://www.swift.org/blog/swift-5.10-released/)
+[swift_release_notes]: https://www.swift.org/blog/swift-5.10-released/
 [swift_badge]: https://img.shields.io/badge/Swift-5.10-F05138?logo=swift
 
 [xcode_website]: https://developer.apple.com/xcode/
