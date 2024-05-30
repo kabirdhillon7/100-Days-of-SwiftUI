@@ -61,7 +61,6 @@ struct ContentView: View {
                         Image(systemName: "gear.circle.fill")
                             .tint(.white)
                             .font(.system(size: 40))
-                        
                     }
                 }
             }
