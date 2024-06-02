@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import PhotosUI
 import SwiftData
 
 struct ContentView: View {

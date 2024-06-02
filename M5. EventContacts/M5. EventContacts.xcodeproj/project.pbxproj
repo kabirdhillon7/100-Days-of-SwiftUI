@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4800EF332C0C09FF002C516C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800EF322C0C09FF002C516C /* Contact.swift */; };
 		4800EF372C0C3080002C516C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800EF362C0C3080002C516C /* DetailView.swift */; };
+		4800EF392C0C3343002C516C /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800EF382C0C3343002C516C /* LocationFetcher.swift */; };
 		48AEC8D62C0AC53500D6FAF9 /* EventContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AEC8D52C0AC53500D6FAF9 /* EventContactsApp.swift */; };
 		48AEC8D82C0AC53500D6FAF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AEC8D72C0AC53500D6FAF9 /* ContentView.swift */; };
 		48AEC8DA2C0AC53600D6FAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AEC8D92C0AC53600D6FAF9 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		4800EF322C0C09FF002C516C /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		4800EF362C0C3080002C516C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4800EF382C0C3343002C516C /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		48AEC8D22C0AC53500D6FAF9 /* M5. EventContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M5. EventContacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AEC8D52C0AC53500D6FAF9 /* EventContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventContactsApp.swift; sourceTree = "<group>"; };
 		48AEC8D72C0AC53500D6FAF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4800EF3A2C0C37FE002C516C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				4800EF382C0C3343002C516C /* LocationFetcher.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		48AEC8C92C0AC53500D6FAF9 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 			children = (
 				48AEC8D52C0AC53500D6FAF9 /* EventContactsApp.swift */,
 				4800EF342C0C3060002C516C /* Model */,
+				4800EF3A2C0C37FE002C516C /* Location */,
 				4800EF352C0C3066002C516C /* Views */,
 				48AEC8D92C0AC53600D6FAF9 /* Assets.xcassets */,
 				48AEC8DB2C0AC53600D6FAF9 /* Preview Content */,
@@ -164,6 +175,7 @@
 			files = (
 				4800EF332C0C09FF002C516C /* Contact.swift in Sources */,
 				48AEC8D82C0AC53500D6FAF9 /* ContentView.swift in Sources */,
+				4800EF392C0C3343002C516C /* LocationFetcher.swift in Sources */,
 				48AEC8D62C0AC53500D6FAF9 /* EventContactsApp.swift in Sources */,
 				4800EF372C0C3080002C516C /* DetailView.swift in Sources */,
 				48AEC8E42C0AC60400D6FAF9 /* AddView.swift in Sources */,
@@ -303,6 +315,7 @@
 				DEVELOPMENT_TEAM = SBCRL8SBBK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to record where you met your event contact.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +345,7 @@
 				DEVELOPMENT_TEAM = SBCRL8SBBK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to record where you met your event contact.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

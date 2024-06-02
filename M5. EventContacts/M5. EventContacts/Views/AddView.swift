@@ -16,6 +16,8 @@ struct AddView: View {
     
     var onSave: (Contact) -> Void
     
+    private let locationFetcher = LocationFetcher()
+    
     init(onSave: @escaping (Contact) -> Void) {
         self.onSave = onSave
     }
@@ -45,14 +47,19 @@ struct AddView: View {
                     }
                 }
             }
+            .onAppear(perform: {
+                locationFetcher.start()
+            })
             .overlay(alignment: .bottom, content: {
                 Button {
                     Task {
-                        if let data = try? await contactPhotoPicker?.loadTransferable(type: Data.self) {
+                        if let data = try? await contactPhotoPicker?.loadTransferable(type: Data.self), let location = locationFetcher.lastKnownLocation {
+                            
                             let contact = Contact(
                                 id: UUID(),
                                 photo: data,
-                                name: name
+                                name: name, 
+                                location: Coordinate2D(latitude: location.latitude, longitude: location.longitude)
                             )
                             
                             onSave(contact)

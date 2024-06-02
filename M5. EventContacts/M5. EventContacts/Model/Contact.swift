@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MapKit
 import SwiftData
 import SwiftUI
 
@@ -18,10 +19,22 @@ final class Contact: Comparable {
     let id: UUID
     @Attribute(.externalStorage) let photo: Data
     let name: String
+    let location: Coordinate2D
     
-    init(id: UUID, photo: Data, name: String) {
+    init(id: UUID, photo: Data, name: String, location: Coordinate2D) {
         self.id = id
         self.photo = photo
         self.name = name
+        self.location = location
+    }
+}
+
+struct Coordinate2D: Codable {
+    let latitude: Double
+    let longitude: Double
+
+    init(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
     }
 }
