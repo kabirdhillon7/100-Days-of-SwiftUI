@@ -33,7 +33,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Project 13: Instafilter<br><sub><sup>CoreImage, CoreImage.CIFilterBuiltins, PhotosUI, StoreKit, .confirmationDialog()</sub></sup> | _ |
 | Project 14: Bucket List<br><sub><sup>MapKit, CoreLocation, LocalAuthentication (FaceID Authentication), Secure Data Writing, Comparable, @Observable, MVVM</sub></sup> | _ |
 | Project 15. AccessibilitySandbox<br><sub><sup>Accessibility</sub></sup> | _ |
-| Milestone 5: EventContacts<br><sub><sup>SwiftData, PhotosUI, Comparable</sub></sup> | _ |
+| Milestone 5: EventContacts<br><sub><sup>SwiftData, PhotosUI, Comparable, MapKit</sub></sup> | _ |
 
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
