@@ -35,6 +35,7 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Project 15. AccessibilitySandbox<br><sub><sup>Accessibility</sub></sup> | _ |
 | Milestone 5: EventContacts<br><sub><sup>SwiftData, PhotosUI, Comparable, MapKit</sub></sup> | _ |
 | Project 16. Hot Prospects<br><sub><sup>Tab Views, Result, .contextMenu, UserNotifications, SwiftData</sub></sup> | _ |
+| Project 17. Flashzilla<br><sub><sup>Gestures, Timers, Accessibility </sub></sup> | _ |
 
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
