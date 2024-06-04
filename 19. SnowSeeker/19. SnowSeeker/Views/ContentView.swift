@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var searchText = ""
 
     var body: some View {
-        NavigationView {
+        NavigationSplitView {
             List(filteredResorts) { resort in
                 NavigationLink {
                     ResortView(resort: resort)
@@ -48,7 +48,7 @@ struct ContentView: View {
             }
             .navigationTitle("Resorts")
             .searchable(text: $searchText, prompt: "Search for a resort")
-
+        } detail: {
             WelcomeView()
         }
         .environmentObject(favorites)
