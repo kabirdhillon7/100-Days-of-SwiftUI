@@ -37,6 +37,8 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Project 16. Hot Prospects<br><sub><sup>Tab Views, Result, .contextMenu, UserNotifications, SwiftData</sub></sup> | _ |
 | Project 17. Flashzilla<br><sub><sup>Gestures, Timers, Accessibility</sub></sup> | _ |
 | Project 18. LayoutAndGeometry<br><sub><sup>GeometryReader, Layout, alignment</sub></sup> | _ |
+| Milestone 6: Roll the Dice<br><sub><sup></sub></sup> | _ |
+| Project 19. SnowSeeker<br><sub><sup>NavigationSplitView, Optional Alerts, List, .searchable(), UserDefaults</sub></sup> | _ |
 
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
