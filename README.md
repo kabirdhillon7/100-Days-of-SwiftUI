@@ -40,12 +40,18 @@ Solutions to Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.co
 | Milestone 6: Roll the Dice<br><sub><sup>SwiftData, Picker</sub></sup>
 | Project 19. SnowSeeker<br><sub><sup>NavigationSplitView, Optional Alerts, List, .searchable(), UserDefaults</sub></sup>
 
+## Certificate of Completion
+<details>
+  <summary>Click to view</summary>
+    <img src="https://github.com/kabirdhillon7/100-Days-of-SwiftUI/assets/74223402/8b2470dd-9866-48b2-bff1-23b88f1a4095" width=500><br>
+  </details>
+</details>
+
 ## Contact
 If you have any questions or feedback, you can reach me through the following channels:
 
 - GitHub: [@kabirdhillon7](https://github.com/kabirdhillon7)
 - LinkedIn: [Kabir Dhillon](https://www.linkedin.com/in/kabirdhillon/)
-
 
 [swift_release_notes]: https://www.swift.org/blog/swift-5.10-released/
 [swift_badge]: https://img.shields.io/badge/Swift-5.10-F05138?logo=swift
